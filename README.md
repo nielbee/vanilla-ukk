@@ -46,7 +46,7 @@ fd.append('title', 'Judul Lagu');
 - Validasi tipe file juga dilakukan di server (`upload.php`). `accept` pada input file hanya untuk pengalaman pengguna dan bisa dilewati.
 
 ## Langkah Berikutnya (saran)
-- Tambah `delete.php` dan `update.php` untuk fitur CRUD lengkap.
+
 - Tambah metadata pagination (total, total_pages) pada hasil `list.php`.
 - Tambah otentikasi sederhana atau proteksi untuk endpoint upload.
 
