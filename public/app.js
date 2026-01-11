@@ -5,8 +5,11 @@ var token = null;
 
 
 $(document).ready(function () {
-	hideDiv("main");
+	// hideDiv("main");
+	getData("","#list_lagu")
 });
+
+
 
 function upload(file, title, artist, lyric) {
 	console.log(file,  title, artist, lyric);
@@ -60,7 +63,22 @@ function login(username, password) {
 
 
 
+function getData(search,id_target){
+	$.ajax({
+		type: "get",
+		url: baseUrl+"list.php?search="+search,
+		success: function (response) {
+			// $(id_target).append(response);		
+			// console.log(response);
 
+			$.each(response, function (indexInArray, valueOfElement) { 
+				//  $(id_target).append(indexInArray);
+				console.log(valueOfElement.id);
+				$(id_target).append(valueOfElement.id);
+			});
+		}
+	});
+}
 
 
 function showDiv(id) {

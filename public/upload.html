@@ -31,10 +31,9 @@
 	<br>
 	<input type="text" id="artist" placeholder="Artist">
 	<br>
-	<textarea name="" id="lyric" placeholder="Lyrics here...">
-	
-	</textarea>
-	<hr>
+	<textarea name="" id="lyric" placeholder="Lyrics here..."></textarea>
+	<!-- <hr> -->
+	 <br> 
 	<button onclick="upload(
 		$('#fileInput')[0].files[0],
 		$('#title').val(),
@@ -43,5 +42,21 @@
 	)">Upload</button>
 	</div>
 	</center>
+	<hr>
+	<table class="table tablep-primary">
+		<tr>
+			<td>
+				<button id="prev_page"><<</button>
+			</td>
+			<td>
+				<p id="page">1</p>
+			</td>
+			<td>
+				<button id="next_page">>></button>
+			</td>
+		</tr>
+	</table>
+	<p id="list_lagu"></p>
+
 </body>
 </html>

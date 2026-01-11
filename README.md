@@ -45,8 +45,8 @@ fd.append('title', 'Judul Lagu');
 - Database SQLite berada di `database/` — anggap ini file pengembangan lokal. Jika Anda mem-push repo beserta DB/unggahan, file tersebut akan masuk ke history git.
 - Validasi tipe file juga dilakukan di server (`upload.php`). `accept` pada input file hanya untuk pengalaman pengguna dan bisa dilewati.
 
-## Langkah Berikutnya (saran)
-
+## Langkah Berikutnya
+- Rapikan upload.html, list lagu masih belum rapi
 - Tambah metadata pagination (total, total_pages) pada hasil `list.php`.
 - Tambah otentikasi sederhana atau proteksi untuk endpoint upload.
 
