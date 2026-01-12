@@ -74,7 +74,10 @@ function getData(search,id_target){
 			$.each(response, function (indexInArray, valueOfElement) { 
 				//  $(id_target).append(indexInArray);
 				console.log(valueOfElement.id);
-				$(id_target).append(valueOfElement.id);
+				$(id_target).append("<tr>");
+				$(id_target).append("<td>"+valueOfElement.artist+" - "+valueOfElement.title+"</td>");
+				$(id_target).append("<td> <button class='btn btn-danger' onclick='deleteMusic("+valueOfElement.id+")'>Delete</button> </td>");
+				$(id_target).append("</tr>");
 			});
 		}
 	});
